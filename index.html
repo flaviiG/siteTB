@@ -13,12 +13,14 @@
     <nav>
         <div class="logo-area">
             <div class="logo-img"><img src="img/logo.jpg"></div>
-            <div class="logo-text"><p><b>THE BOULANGEES</b></p></div>
-        </div>  
+            <div class="logo-text">
+                <p><b>THE BOULANGEES</b></p>
+            </div>
+        </div>
         <ul class="links">
             <li><a href="#">HOME</a></li>
             <li><a href="#">DESPRE NOI</a>
-                <ul>
+                <ul class="submenu">
                     <li><a href="#">POVESTE</a>
                     <li><a href="#Games">GAMES</a>
                 </ul>
@@ -36,14 +38,52 @@
 
 
     <div class="first-img"><img src="img/banner-bg.jpg"></div>
-    <div class="container">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
-        <div class="item4"></div>
+    <div class="item1">
+        <p>ESPORTS ORGANIZATION</p>
+        <p>ECHIPE SI COMUNITATE</p>
     </div>
-    <div id="Games"></div>
-    <div id="Membri"></div>
+    <div class="container">
+        <div class="item2">
+            <img src="img/controller.png">
+            <p>INDIFERENT DE JOC SUNTEM GATA DE PROVOCARE. FIE CA TOCMAI CE AM INCEPUT SA JUCAM FIE CA SUNTEM VETERANI.
+            </p>
+        </div>
+        <div class="item3">
+            <img src="img/trophy.png">
+            <p>AM PARTICIPAT LA MULTE TURNEE, DECI PUTEM SPUNE CA AVEM EXPERIENTA IN CEEA CE PRIVESTE COMPETITII, CHIAR
+                SI IN ORGANIZAREA ACESTORA.</p>
+        </div>
+        <div class="item4">
+            <img src="img/third-service-icon.png">
+            <p>PE LANGA JUCATORI DEOSEBITI, IN ECHIPA NOASTRA SUNT SI CREATORI MEDIA: DE LA VIDEOCLIPURI, FOTOGRAFII, LA
+                DESIGNS, CHIAR SI MUZICA.</p>
+        </div>
+    </div>
+    <div id="Games">
+    <p>GAMES</p>
+    <p>CAND VINE VORBA DE CEL MAI IMPORTANT LUCRU AL NOSTRU ACESTA ESTE COMPETITIA LA NIVEL INALT. PENTRU ACEST LUCRU AM
+        FACUT ECHIPE PENTRU CELE MAI IMPORTANTE SI POPULARE JOCURI DE AZI:</p>
+    <div class="Games-grid">
+        <div class="Game1">
+            <button id="ValDefault" onclick="toggleTextVal()"><img src="img/valorant.png"></button> 
+        </div>
+        <div class="Game2">
+            <button onclick="toggleTextCsgo()"><img src="img/csgo.png"></button>
+            
+        </div>
+        <div class="Game3">
+            <button onclick="toggleTextLol()"><img src="img/lol.png"></button>
+        </div>
+        <div class="Game4">
+            <button onclick="toggleTextFortnite()"><img src="img/fortnite.png"></button>
+        </div>
+    </div>
+    <p id="Val">VALORANT ESTE UN TACTICAL FPS</p>
+    <p id="csgo">ABSCSA</p>
+    <p id="lol">TRASHHHHH</p>
+    <p id="fortnite">VIETGANG</p>
+    </div>
+        <div id="Membri"></div>
     <div id="Contact"></div>
     <script src="script.js"></script>
 </body>
