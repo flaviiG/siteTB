@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/services-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    border-radius: 15px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 7vh;
+    background-color: white;
+    font-size: 1vw;
+    font-family: 'Syncopate', sans-serif;
+    z-index: 123;
+    box-shadow: 0px 5px 15px #888888;
+}
+
+
+.logo-area {
+    display: flex;
+    min-height: 7vh;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1vw;
+    color: #049bf3;
+    letter-spacing: -0.1em;
+}
+
+.logo-img img {
+    width: 6vw;
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.links li ul {
+    display: none;
+}
+
+.links li:hover ul {
+    display: block;
+}
+
+.phone-menu-icon{
+    display: none;
+}
+
+.phone-menu-icon div{
+    width: 25px;
+    height: 5px;
+    background-color: #049bf3;
+    margin: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+    .links {
+        position: absolute;
+        right: 0px;
+        height: 86vh;
+        top: 8vh;
+        background-color: salmon;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(200%);
+        transition: transform 0.5s ease-in;
+        z-index: 123;
+        font-size: 2vw;
+    }
+    .logo-area {
+        width: 60%;
+    }
+    .logo-text {
+        font-size: 1.5vw;
+    }
+    .links li{
+        opacity: 0;
+    }
+    .phone-menu-icon{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 800px){
+    .links {
+        width: 50%;
+    }
+
+}
+
+.nav-active{
+    transform: translateX(0%)
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.first-img img {
+    width: 100%;
+}
+
+.item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background-color: #049bf3;
+}
+
+.item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: col21;
+    background-color:  salmon;
+    opacity: 50%;
+}
+
+.item3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: col22;
+    background-color: grey;
+    opacity: 50%;
+}
+
+.item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: col23;
+    background-color: #049bf3;
+    opacity: 50%;
+}
+
+.container {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "col21 col22 col23"
+        "col21 col22 col23"
+}
+
+#Games {
+    display: block;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+}
+
+#Membri {
+    display: block;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+}
+
+#Contact {
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(79, 110, 155);
+}
