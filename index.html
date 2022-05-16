@@ -21,11 +21,10 @@
             <li><a href="#">HOME</a></li>
             <li><a href="#">DESPRE NOI</a>
                 <ul class="submenu">
-                    <li><a href="#">POVESTE</a>
-                    <li><a href="#Games">GAMES</a>
+                    <li><a href="#Games">GAMES</a></li>
+                    <li><a href="#Membri">MEMBRI</a></li>
                 </ul>
             </li>
-            <li><a href="#Membri">MEMBRI</a></li>
             <li><a href="#Contact">CONTACT</a></li>
         </ul>
         <div class="phone-menu-icon">
@@ -60,30 +59,43 @@
         </div>
     </div>
     <div id="Games">
-    <p>GAMES</p>
-    <p>CAND VINE VORBA DE CEL MAI IMPORTANT LUCRU AL NOSTRU ACESTA ESTE COMPETITIA LA NIVEL INALT. PENTRU ACEST LUCRU AM
-        FACUT ECHIPE PENTRU CELE MAI IMPORTANTE SI POPULARE JOCURI DE AZI:</p>
-    <div class="Games-grid">
-        <div class="Game1">
-            <button id="ValDefault" onclick="toggleTextVal()"><img src="img/valorant.png"></button> 
+        <p>GAMES</p>
+        <p>CAND VINE VORBA DE CEL MAI IMPORTANT LUCRU AL NOSTRU ACESTA ESTE COMPETITIA LA NIVEL INALT. PENTRU ACEST
+            LUCRU AM
+            FACUT ECHIPE PENTRU CELE MAI IMPORTANTE SI POPULARE JOCURI DE AZI:</p>
+        <div class="Games-grid">
+            <div class="Game1">
+                <button id="ValDefault" onclick="toggleTextVal()"><img src="img/valorant.png"></button>
+            </div>
+            <div class="Game2">
+                <button onclick="toggleTextCsgo()"><img src="img/csgo.png"></button>
+
+            </div>
+            <div class="Game3">
+                <button onclick="toggleTextLol()"><img src="img/lol.png"></button>
+            </div>
+            <div class="Game4">
+                <button onclick="toggleTextFortnite()"><img src="img/fortnite.png"></button>
+            </div>
         </div>
-        <div class="Game2">
-            <button onclick="toggleTextCsgo()"><img src="img/csgo.png"></button>
-            
+        <p id="Val">VALORANT ESTE UN TACTICAL FPS</p>
+        <p id="csgo">ABSCSA</p>
+        <p id="lol">TRASHHHHH</p>
+        <p id="fortnite">VIETGANG</p>
+    </div>
+    <div id="Membri">
+        <p>MEMBRI</p>
+        <p id="Second-Row">DE LA JUCATORI LA CREATORI DE CONTENT</p>
+        <div class="Random-Member">
+            <div class="Member-Button">
+            <button onclick="choosePic()" id="Show-Member">SHOW A MEMBER</button>
         </div>
-        <div class="Game3">
-            <button onclick="toggleTextLol()"><img src="img/lol.png"></button>
-        </div>
-        <div class="Game4">
-            <button onclick="toggleTextFortnite()"><img src="img/fortnite.png"></button>
+            <div class="Member">
+                <img src="img/flavian_s.png" id="Member-Photo">
+                <p id="Member-Description">FLAVIAN ESTE CEO-UL THE BOULANGEES. PE LANGA ACEASTA POZITIE IMPORTANTA ESTE SI JUCATOR LA TOATE ECHIPELE DIN ACEASTA ORGANIZATIE. DAR ASTA NU ESTE TOT! ESTE SI CEL CARE SE OCUPA DE CONTENT CREATION CUM AR FI VIDEOCLIPURI PE YOUTUBE SAU ACEST SITE</p>
+            </div>
         </div>
     </div>
-    <p id="Val">VALORANT ESTE UN TACTICAL FPS</p>
-    <p id="csgo">ABSCSA</p>
-    <p id="lol">TRASHHHHH</p>
-    <p id="fortnite">VIETGANG</p>
-    </div>
-        <div id="Membri"></div>
     <div id="Contact"></div>
     <script src="script.js"></script>
 </body>

@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-image: url(img/services-bg.jpg);
@@ -67,12 +70,12 @@ nav li:hover {
     display: flex;
     min-height: 7vh;
     width: 40%;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .logo-text {
-    font-size: 1vw;
+    font-size: 1.2vw;
     color: #049bf3;
     letter-spacing: -0.1em;
 }
@@ -85,7 +88,7 @@ nav li:hover {
 .links {
     display: flex;
     justify-content: space-between;
-    width: 55%;
+    width: 40%;
     height: 100%;
 }
 
@@ -255,8 +258,8 @@ nav li:hover {
     word-wrap: break-word;
     color: white;
     text-align: center;
-    font-size: 1.5vw;
-    padding-top: 50px;
+    font-size: 1vw;
+    padding: 50px 50px 0px 50px;
 }
 .container img{
     margin-top:200px;
@@ -281,6 +284,7 @@ nav li:hover {
 }
 
 #Games p:nth-child(2) {
+    color: #4f4f57;
     text-align: center;
     font-size: 1.2vw;
     padding: 30px 300px 0px 300px;
@@ -359,8 +363,64 @@ nav li:hover {
 #Membri {
     display: block;
     width: 100%;
-    min-height: 700px;
+    min-height: 35vw;
     background-color: black;
+}
+
+#Membri p:first-child{
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    padding-top: 50px;
+}
+
+#Second-Row{
+    text-align: center;
+    color: #a7a7b8;
+    font-size: 1vw;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.Random-Member {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vw;
+}
+
+.Member {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+    border:2px solid #a7a7b8;
+    border-radius: 5px;
+}
+
+.Member img{
+    margin: 0 auto;
+    height: 100%;
+    float: left;
+    padding-right: 50px;
+}
+
+#Member-Description{
+    font-size: 1.5vw;
+    color:white;
+    padding-right: 50px;
+    text-align: center;
+}
+
+#Show-Member {
+    background-color: black;
+    border: 2px solid #a7a7b8;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Syncopate', sans-serif;
+    border-radius: 5px;
 }
 
 #Contact {
@@ -397,5 +457,28 @@ nav li:hover {
     }
     .item4 {
         flex: 1;
+    }
+    .Random-Member {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80vw;
+    }
+    #Membri {
+        min-height: 80vw;
+    }
+    #Membri p:first-child{
+        font-size: 4vw;
+    }
+    
+    #Second-Row{
+        font-size: 3vw;
+    }
+    .Member {
+        width: 97%;
+        height: 70%;
+    }
+    #Member-Description {
+        font-size: 2.2vw;
     }
 }
