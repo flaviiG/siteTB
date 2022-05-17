@@ -7,6 +7,22 @@ html{
     scroll-behavior: smooth;
 }
 
+.ScrollBar-container {
+    width:100%;
+    height:6px;
+    background: #049bf3;
+    position: fixed;
+    border-radius: 10px;
+}
+
+#BAR{
+    position: fixed;
+    height: 6px;
+    background: salmon;
+    width: 0%;
+    border-radius: 10px;
+}
+
 body {
     background-image: url(img/services-bg.jpg);
     background-size: cover;
@@ -19,7 +35,7 @@ body {
 nav {
     width: 50%;
     margin-left: 25%;
-    margin-top: 2%;
+    margin-top: 1%;
     border-radius: 15px;
     position: fixed;
     display: flex;
@@ -81,6 +97,7 @@ nav li:hover {
 }
 
 .logo-img img {
+    padding-top: 2px;
     width: 6vw;
 }
 
@@ -314,6 +331,7 @@ nav li:hover {
 .Games-grid button {
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .Games-grid button:focus {
@@ -322,6 +340,7 @@ nav li:hover {
 }
 
 #Val {
+    text-align: center;
     display: none;
     padding-top: 100px;
     font-size: 2vw;
@@ -329,18 +348,21 @@ nav li:hover {
 
 
 #csgo {
+    text-align: center;
     display: none;
     padding-top: 100px;
     font-size: 2vw;
 }
 
 #lol {
+    text-align: center;
     display: none;
     padding-top: 100px;
     font-size: 2vw;
 }
 
 #fortnite {
+    text-align: center;
     display: none;
     padding-top: 100px;
     font-size: 2vw;
@@ -404,6 +426,7 @@ nav li:hover {
     height: 100%;
     float: left;
     padding-right: 50px;
+    opacity: 0;
 }
 
 #Member-Description{
@@ -411,6 +434,7 @@ nav li:hover {
     color:white;
     padding-right: 50px;
     text-align: center;
+    opacity: 0;
 }
 
 #Show-Member {
@@ -421,13 +445,110 @@ nav li:hover {
     padding: 10px;
     font-family: 'Syncopate', sans-serif;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+#Video {
+    background: rgba(250, 128, 114, .7);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+#Inscriere {
+    display: flex;
+    height: 500px;
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.Formular {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:60%;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 90%;
+}
+
+.Guide {
+    width: 35%;
+}
+
+.Guide p{
+    font-size: 1.3vw;
+    text-align: center;
+    color: white;
+}
+
+.Form {
+    text-align: end;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.Form input[type=text], input[type=email] {
+    background-color: salmon;
+    width: 50%;
+    border: transparent;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin: 8px 0;
+}
+
+.Form input[type=text]:focus, input[type=email]:focus {
+    background-color: #049bf3;
+}
+
+.Form button {
+    background-color: salmon;
+    font-size: 1.3vw;
+    font-family: inherit;
+    border: 2px solid rgb(149, 141, 141);
+    border-radius: 3px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Form input[name=nume], input[name=prenume], input[name=email] {
+    font-size: 1.3vw;
+    font-family: inherit;
 }
 
 #Contact {
-    display: block;
+    display: flex;
     width: 100%;
     height: 150px;
     background-color: rgb(79, 110, 155);
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-Links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Contact-Links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.Contact-Links a:visited {
+    color: white; 
+    text-decoration: none;
+
 }
 
 @media (max-width: 1000px) {
@@ -437,6 +558,9 @@ nav li:hover {
         display: flex;
         justify-content: stretch;
         flex-direction: column;
+    }
+    #Games p:first-child {
+        font-size: 3.5vw;
     }
     #Games p:nth-child(2)
     {
@@ -480,5 +604,33 @@ nav li:hover {
     }
     #Member-Description {
         font-size: 2.2vw;
+    }
+    .Contact-Links a {
+        text-decoration: none;
+        color: white;
+        font-size: 2.5vw;
+    }
+    .Contact-Links{
+        width: 70%;
+    }
+    .Formular {
+        display: flex;
+        flex-direction: column;
+    }
+    .Guide {
+        width: 80%;
+    }
+    .Form {
+        width: 80%;
+        font-size: 2vw;
+    }
+    .Guide p{
+        font-size: 2vw;
+    }
+    .Form button {
+        font-size: 2vw;
+    }
+    .Form input[name=nume], input[name=prenume], input[name=email] {
+        font-size: 2vw;
     }
 }

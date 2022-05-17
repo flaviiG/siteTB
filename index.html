@@ -2,6 +2,7 @@
 
 <head>
     <title>The Boulangees</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,6 +11,9 @@
 </head>
 
 <body>
+    <div class="ScrollBar-container">
+        <div class="ScrollBar" id="BAR"></div>
+    </div>
     <nav>
         <div class="logo-area">
             <div class="logo-img"><img src="img/logo.jpg"></div>
@@ -88,14 +92,45 @@
         <p id="Second-Row">DE LA JUCATORI LA CREATORI DE CONTENT</p>
         <div class="Random-Member">
             <div class="Member-Button">
-            <button onclick="choosePic()" id="Show-Member">SHOW A MEMBER</button>
-        </div>
+                <button onclick="choosePic()" id="Show-Member">SHOW A MEMBER</button>
+            </div>
             <div class="Member">
                 <img src="img/flavian_s.png" id="Member-Photo">
-                <p id="Member-Description">FLAVIAN ESTE CEO-UL THE BOULANGEES. PE LANGA ACEASTA POZITIE IMPORTANTA ESTE SI JUCATOR LA TOATE ECHIPELE DIN ACEASTA ORGANIZATIE. DAR ASTA NU ESTE TOT! ESTE SI CEL CARE SE OCUPA DE CONTENT CREATION CUM AR FI VIDEOCLIPURI PE YOUTUBE SAU ACEST SITE</p>
+                <p id="Member-Description">FLAVIAN ESTE CEO-UL THE BOULANGEES. PE LANGA ACEASTA POZITIE IMPORTANTA ESTE
+                    SI JUCATOR LA TOATE ECHIPELE DIN ACEASTA ORGANIZATIE. DAR ASTA NU ESTE TOT! ESTE SI CEL CARE SE
+                    OCUPA DE CONTENT CREATION CUM AR FI VIDEOCLIPURI PE YOUTUBE SAU ACEST SITE</p>
             </div>
         </div>
     </div>
-    <div id="Contact"></div>
+    <div id="Video">
+        <iframe width="1024" height="576" src="https://www.youtube.com/embed/wp0KADB6weA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div id="Inscriere">
+        <div class="Formular">
+            <div class="Guide">
+                <p>VREI SA TE ALATURI ECHIPEI NOASTRE? INTRODU NUMELE PRENUMELE SI EMAILUL SI TE VOM CONTACTA PENTRU A AFLA MAI MULTE DESPRE TINE</p>
+            </div>
+            <div class="Form">
+                <form id="formularTB" action="">
+                    NUME: <input type="text" name="nume" id="nume"><br>
+                    PRENUME: <input type="text" name="prenume" id="prenume"><br>
+                    EMAIL: <input type="email" name="email" id="email"><br><br>
+                    
+                </form>
+                <button onclick="submitform()">SUBMIT</button>
+                <button onclick="afisareInscrisi()">AFISARE</button>
+            </div>
+        </div>
+    </div>
+    <div id="Contact">
+        <div class="Contact-Links">
+            <a href="https://www.youtube.com/channel/UC3T_rHooUWMGi9uSI0MX8Yg" target=”_blank”>YOUTUBE</a>
+            <a href="https://www.instagram.com/the_boulangees/" target=”_blank”>INSTAGRAM</a>
+            <a href="https://discord.gg/ACSuWFngGT" target=”_blank”>DISCORD</a>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
